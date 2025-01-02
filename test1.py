@@ -16,7 +16,7 @@ from dronekit import connect, VehicleMode, LocationGlobalRelative, APIException
 import time
 from collections.abc import MutableMapping
 import socket
-import exceptions  # This line seems unnecessary. Python's built-in exceptions are available without import.
+# import exceptions  
 import math
 import argparse  # Corrected import statement.
 
@@ -48,7 +48,7 @@ def arm(vehicle):
     return None
 
 vehicle = connectMyCopter()
-arm()
+arm(vehicle)
 
 
 
